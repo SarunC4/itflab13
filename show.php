@@ -20,11 +20,13 @@
     ?>
     <div class="container">
     <table class="table table-stripped table-bordered table-hover mt-5">
-      <tr>
-        <th width="100"> <div align="center">Name</div></th>
-        <th width="350"> <div align="center">Comment </div></th>
-        <th width="150"> <div align="center">Action </div></th>
-      </tr>
+      <thead class="thead-dark">
+        <tr>
+          <th width="100"> <div align="center">Name</div></th>
+          <th width="350"> <div align="center">Comment </div></th>
+          <th width="150"> <div align="center">Action </div></th>
+        </tr>
+      </thead>
       <?php
       while($Result = mysqli_fetch_array($res))
       {
