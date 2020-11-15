@@ -32,7 +32,7 @@
         <tr class="table-info">
           <td><?php echo $Result['Name'];?></td>
           <td><?php echo $Result['Comment'];?></td>
-          <td><a href="delete.php?id=<?php echo $Result['ID']; ?>" class="btn btn-danger">ลบ</a><a href="update.php?id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >แก้ไข</a></td>
+          <td><a href="delete.php?id=<?php echo $Result['ID']; ?>" class="btn btn-danger text-center">ลบ</a> <a href="update.php?id=<?php echo $Result["ID"]; ?>" class="btn btn-warning text-center" >แก้ไข</a></td>
         </tr>
       <?php
       }
