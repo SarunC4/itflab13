@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Comment Form</title>
-</head>
-<body>
-  <form action = "insert.php" method = "post" id="CommentForm" >
-    Name:<br>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
-    Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-    <input type="submit" id="commentBtn">
-  </form> 
-</body>
+  <head>
+    <title>Comment Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action = "insert.php" method = "post" id="CommentForm" class="form-horizontal">
+      <div class="form-group">
+        <label for="name" class="control-label">Name</label><br>
+        <div class="col-sm-6">
+          <input type="text" name = "name" id="idName" placeholder="Enter Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comment" class="control-label">Comment</label><br>
+        <div class="col-sm-6">
+          <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9 mt-5">
+          <input type="submit" name="commentBtn" class="btn btn-success" value="เพิ่ม">
+          <a href="show.php" class="btn btn-danger">ยกเลิก</a>
+        </div>
+      </div>
+    </form> 
+  </body>
 </html>
