@@ -18,7 +18,7 @@ $sql = "INSERT INTO guestbook (Name, Comment, Link) VALUES ('$name', '$comment',
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
-    header("refresh:2;show.php");
+    ?><a href="show.php" class="btn btn-warning">กลับ</a><?php
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
