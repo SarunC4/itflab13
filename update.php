@@ -16,7 +16,7 @@
     {
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
-    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id='$id'");
+    //$res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id='$id'");
     ?>
     <div class="container">
     <div class="display-3 text-center mb-3">Edit Form</div>
