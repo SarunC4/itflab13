@@ -17,7 +17,12 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
-    $id = $_REQUEST['delete_id']
+    if (isset($_REQUEST['delete_id'])) {
+      $id = $_REQUEST['delete_id']
+      $select_stmt = "SELECT * FROM guestbook WHERE id='$id'";
+      $delete_stmt = "DELETE FROM guestbook WHERE id='$id'";
+      header('Location:show.php');
+    }
     ?>
     <div class="container">
     <table class="table table-stripped table-bordered table-hover mt-5">
