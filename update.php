@@ -5,7 +5,7 @@
   {
       die('Failed to connect to MySQL: '.mysqli_connect_error());
   }
-  $id = $_GET['ID'];
+  $id = $_REQUEST['edit_id'];
   $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id='$id'");
   $Result = mysqli_fetch_array($res)
 ?>
