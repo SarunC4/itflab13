@@ -17,10 +17,7 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
-    if (isset($_REQUEST['delete_id'])) {
-      $id = $_REQUEST['delete_id']
-      echo $id
-    }
+    $id = $_REQUEST['delete_id']
     ?>
     <div class="container">
     <table class="table table-stripped table-bordered table-hover mt-5">
