@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Added</title>
+    <title>Updated</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,9 +20,9 @@
     }
 
     $edit_id = $_GET['edit_id'];
-    $name = $_GET['name'];
-    $comment = $_GET['comment'];
-    $link = $_GET['link'];
+    $name = $_POST['name'];
+    $comment = $_POST['comment'];
+    $link = $_POST['link'];
 
 
     $sql = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$edit_id'";
