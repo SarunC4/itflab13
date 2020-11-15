@@ -10,21 +10,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <form action = "insert.php" method = "post" id="CommentForm" class="form-horizontal">
+    <form action = "insert.php" method = "post" id="CommentForm" class="form-horizontal mt-5">
       <div class="form-group text-center">
-        <label for="name" class="control-label">Name</label><br>
-        <div class="col-sm-6">
-          <input type="text" name = "name" id="idName" placeholder="Enter Name">
+        <div class="row">
+          <label for="name" class="control-label">Name</label><br>
+          <div class="col-sm-9">
+            <input type="text" name = "name" id="idName" placeholder="Enter Name">
+          </div>
         </div>
       </div>
       <div class="form-group text-center">
-        <label for="comment" class="control-label">Comment</label><br>
-        <div class="col-sm-6">
-          <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea>
+        <div class="row">
+          <label for="comment" class="control-label">Comment</label><br>
+          <div class="col-sm-9">
+            <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea>
+          </div>
         </div>
       </div>
       <div class="form-group text-center">
-        <div class="col-sm-offset-3 col-sm-9 mt-5">
+        <div class="col-md-12 mt-3">
           <input type="submit" name="commentBtn" class="btn btn-success" value="เพิ่ม">
           <a href="show.php" class="btn btn-danger">ยกเลิก</a>
         </div>
