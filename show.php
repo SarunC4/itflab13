@@ -18,6 +18,7 @@
     }
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     if (isset($_REQUEST['delete_id'])) {
+      $id = $_REQUEST['delete_id']
       echo $id
     }
     ?>
