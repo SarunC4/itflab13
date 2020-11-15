@@ -6,8 +6,7 @@
       die('Failed to connect to MySQL: '.mysqli_connect_error());
   }
   $id = $_REQUEST['ID'];
-  $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE id='$id'");
-  $Result = mysqli_fetch_array($res)
+  $res = "SELECT * FROM guestbook WHERE id='$id'";
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,21 +26,21 @@
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
           <div class="col-sm-6">
-            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $Result['Name']; ?>">
+            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $res['Name']; ?>">
           </div>
         </div>
 
         <div class="form-group">
           <label for="comment" class="col-sm-3 control-label">Comment</label>
           <div class="col-sm-6">
-            <textarea rows="10" cols="40" name = "comment" id="idComment" value="<?php echo $Result['Comment']; ?>"></textarea>
+            <textarea rows="10" cols="40" name = "comment" id="idComment" value="<?php echo $res['Comment']; ?>"></textarea>
           </div>
         </div>
 
         <div class="form-group">
           <label for="link" class="col-sm-3 control-label">Link</label>
           <div class="col-sm-6">
-            <input type="text" name="link" id="idlink" class="form-control" value="<?php echo $Result['Link']; ?>">
+            <input type="text" name="link" id="idlink" class="form-control" value="<?php echo $res['Link']; ?>">
           </div>
         </div>
 
