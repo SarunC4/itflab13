@@ -6,7 +6,11 @@
       die('Failed to connect to MySQL: '.mysqli_connect_error());
   }
   $id = $_REQUEST['ID'];
+  $name = $_REQUEST['name'];
+  $comment = $_REQUEST['comment'];
+  $link = $_REQUEST['link'];
   $res = "SELECT * FROM guestbook WHERE id='$id'";
+  $update = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$id'"
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +25,7 @@
   </head>
   <body>
     <div class="container">
-      <form action = "insert.php" method = "post" id="UpdateForm" class="form-horizontal mt-5">
+      <form method = "post" id="UpdateForm" class="form-horizontal mt-5">
         <div class="display-3 text-center mb-3">Update Form</div>
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
