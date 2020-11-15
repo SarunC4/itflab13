@@ -37,7 +37,7 @@
       <?php
       }
       ?>
-    <a href="form.html" class="btn btn-success">เพิ่ม +</a>
+    <br><a href="form.html" class="btn btn-success">เพิ่ม +</a>
     </table>
     </div>
     <?php
