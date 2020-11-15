@@ -22,12 +22,12 @@
   </head>
   <body>
     <div class="container">
-      <form action = "edit.php" method = "post" id="UpdateForm" class="form-horizontal mt-5">
+      <form method = "post" id="UpdateForm" class="form-horizontal mt-5">
         <div class="display-3 text-center mb-3">Update Form</div>
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
           <div class="col-sm-6">
-            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $Result['Name']; ?>">
+            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $id; ?>">
           </div>
         </div>
 
