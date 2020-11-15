@@ -37,8 +37,8 @@
       <?php
       }
       ?>
-    <br><a href="form.html" class="btn btn-success">เพิ่ม +</a>
     </table>
+    <br><div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     </div>
     <?php
     mysqli_close($conn);
