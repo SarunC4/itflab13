@@ -19,7 +19,7 @@
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     ?>
     <div class="container">
-    <table class="table table-stripped table-bordered table-hover">
+    <table class="table table-stripped table-bordered table-hover mt-5">
       <tr class="table-primary">
         <th width="100"> <div align="center">Name</div></th>
         <th width="350"> <div align="center">Comment </div></th>
@@ -38,7 +38,7 @@
       }
       ?>
     </table>
-    <br><div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
+    <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     </div>
     <?php
     mysqli_close($conn);
