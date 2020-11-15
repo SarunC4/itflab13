@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>ITF Lab</title>
+    <title>All Comments</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,6 +17,9 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
+    if (isset($_REQUEST['delete_id'])) {
+      echo $id
+    }
     ?>
     <div class="container">
     <table class="table table-stripped table-bordered table-hover mt-5">
@@ -34,7 +37,7 @@
         <tr>
           <td><?php echo $Result['Name'];?></td>
           <td><?php echo $Result['Comment'];?></td>
-          <td><div class="text-center"><a href="delete.php?id=<?php echo $Result['ID']; ?>" class="btn btn-danger">ลบ</a> <a href="update.php?id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >แก้ไข</a></div></td>
+          <td><div class="text-center"><a href="?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">ลบ</a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >แก้ไข</a></div></td>
         </tr>
       <?php
       }
