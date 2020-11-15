@@ -7,7 +7,7 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$edit_id = $_POST['edit_id'];
+$edit_id = $_GET['edit_id'];
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
