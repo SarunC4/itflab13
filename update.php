@@ -6,11 +6,8 @@
       die('Failed to connect to MySQL: '.mysqli_connect_error());
   }
   $id = $_REQUEST['ID'];
-  $name = $_REQUEST['name'];
-  $comment = $_REQUEST['comment'];
-  $link = $_REQUEST['link'];
   $res = "SELECT * FROM guestbook WHERE id='$id'";
-  $update = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$id'"
+  $Result = mysqli_fetch_array($res)
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,26 +22,26 @@
   </head>
   <body>
     <div class="container">
-      <form method = "post" id="UpdateForm" class="form-horizontal mt-5">
+      <form action = "edit.php" method = "post" id="UpdateForm" class="form-horizontal mt-5">
         <div class="display-3 text-center mb-3">Update Form</div>
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
           <div class="col-sm-6">
-            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $res['Name']; ?>">
+            <input type="text" name="name" id="idname" class="form-control" value="<?php echo $Result['Name']; ?>">
           </div>
         </div>
 
         <div class="form-group">
           <label for="comment" class="col-sm-3 control-label">Comment</label>
           <div class="col-sm-6">
-            <textarea rows="10" cols="40" name = "comment" id="idComment" value="<?php echo $res['Comment']; ?>"></textarea>
+            <textarea rows="10" cols="40" name = "comment" id="idComment" value="<?php echo $Result['Comment']; ?>"></textarea>
           </div>
         </div>
 
         <div class="form-group">
           <label for="link" class="col-sm-3 control-label">Link</label>
           <div class="col-sm-6">
-            <input type="text" name="link" id="idlink" class="form-control" value="<?php echo $res['Link']; ?>">
+            <input type="text" name="link" id="idlink" class="form-control" value="<?php echo $Result['Link']; ?>">
           </div>
         </div>
 
