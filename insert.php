@@ -30,7 +30,7 @@
 
     if (mysqli_query($conn, $sql)) {
       ?><div class="display-3 text-center mb-3">Added Successfully</div><br>
-      <a href="show.php" class="btn btn-warning">กลับ</a><?php
+      <a href="show.php" class="btn btn-warning text-center">กลับ</a><?php
       } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       }
