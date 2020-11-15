@@ -23,7 +23,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="updatedb.php" method = "post" id="UpdateForm" class="form-horizontal mt-5">
+      <form action="updatedb.php?edit_id=<?php echo $edit_id; ?>" method = "post" id="UpdateForm" class="form-horizontal mt-5">
         <div class="display-3 text-center mb-3">Update Form</div>
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
