@@ -22,10 +22,9 @@
     $edit_id = $_GET['edit_id'];
     $name = $_POST['name'];
     $comment = $_POST['comment'];
-    $link = $_POST['link'];
 
 
-    $sql = "UPDATE guestbook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$edit_id'";
+    $sql = "UPDATE guestbook SET Name='$name', Comment='$comment' WHERE id='$edit_id'";
 
 
     if (mysqli_query($conn, $sql)) {
