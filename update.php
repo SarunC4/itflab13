@@ -35,7 +35,7 @@
         <div class="form-group">
           <label for="comment" class="col-sm-3 control-label">Comment</label>
           <div class="col-sm-6">
-            <textarea rows="10" cols="40" name = "comment" id="idComment" value="<?php echo $Comment; ?>"></textarea>
+            <textarea rows="10" cols="40" name = "comment" id="idComment"><?php echo $Comment; ?></textarea>
           </div>
         </div>
 
