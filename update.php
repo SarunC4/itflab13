@@ -42,7 +42,7 @@
         <div class="form-group">
           <div class="col-md-12 mt-3">
             <input type="submit" name="upbtn" id="idupbtn" class="btn btn-success" value="แก้ไข">
-            <a href="show.php" class="btn btn-danger">ยกเลิก</a>
+            <a href="index.php" class="btn btn-danger">ยกเลิก</a>
           </div>
         </div>
 
