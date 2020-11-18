@@ -21,8 +21,8 @@
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     ?>
     <div class="container">
-    <div class="display-3 text-center mb-3">Comments Table</div>
-    <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
+    <div class="display-3 text-center mt-3">Comments Table</div>
+    <table id="commentTable" class="display" style="width: 100%;"> <!--table table-stripped table-bordered table-hover mt-5-->
       <thead class="thead-dark">
         <tr>
           <th width="100"> <div align="center">Name</div></th>
@@ -45,7 +45,7 @@
     </table>
     <script>
         $(document).ready(function () {
-            $("#myTable").DataTable();
+            $("#commentTable").DataTable();
         });
     </script>
     <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
