@@ -32,9 +32,9 @@
 
 
     if (mysqli_query($conn, $sql)) {
-      echo?><script>alert('Added Successfully');
+      echo "<script>alert('Added Successfully');
       window.location.href="index.php";
-      </script>
+      </script>"?>
       <div class="text-center"><a href="index.php" class="btn btn-warning"><i class="fa fa-home"></i></a></div><?php
       } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
