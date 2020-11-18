@@ -7,11 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-      body {
-        background-color: #F0F8FF;
-      }
-    </style>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
   </head>
   <body>
     <?php
@@ -24,7 +21,8 @@
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     ?>
     <div class="container">
-    <table class="table table-stripped table-bordered table-hover mt-5">
+    <div class="display-3 text-center mb-3">Comments Table</div>
+    <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
           <th width="100"> <div align="center">Name</div></th>
@@ -45,6 +43,11 @@
       }
       ?>
     </table>
+    <script>
+        $(document).ready(function () {
+            $("#myTable").DataTable();
+        });
+    </script>
     <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     </div>
     <?php
