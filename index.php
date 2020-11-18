@@ -28,9 +28,9 @@
     <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
-          <th width="100"> <div align="center">#</div></th>
+          <th width="50"> <div align="center">#</div></th>
           <th width="100"> <div align="center">Name</div></th>
-          <th width="300"> <div align="center">Comment </div></th>
+          <th width="350"> <div align="center">Comment </div></th>
           <th width="100"> <div align="center">Action </div></th>
         </tr>
       </thead>
