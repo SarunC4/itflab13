@@ -11,11 +11,6 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Edit Icon -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .btn:hover {
-        background-color: LightGrey;
-      }
-    </style>
   </head>
   <body>
     <?php
@@ -29,6 +24,7 @@
     ?>
     <div class="container">
     <div class="display-3 text-center mt-3">Comments Table</div>
+    <div align="left"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
@@ -55,7 +51,6 @@
             $("#commentTable").DataTable();
         });
     </script>
-    <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     </div>
     <?php
     mysqli_close($conn);
