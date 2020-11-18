@@ -22,7 +22,7 @@
     ?>
     <div class="container">
     <div class="display-3 text-center mt-3">Comments Table</div>
-    <table id="commentTable" class="display" style="width: 100%;"> <!--table table-stripped table-bordered table-hover mt-5-->
+    <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
           <th width="100"> <div align="center">Name</div></th>
