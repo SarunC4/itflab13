@@ -12,17 +12,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      .btnr {
-        background-color: Red;
-        border: none;
-        color: white;
-        padding: 12px 16px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      /* Darker background on mouse-over */
       .btn:hover {
-        background-color: Grey;
+        background-color: LightGrey;
       }
     </style>
   </head>
