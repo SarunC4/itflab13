@@ -24,7 +24,6 @@
     ?>
     <div class="container">
     <div class="display-3 text-center mt-3">Comments Table</div>
-    <div align="left"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
@@ -51,6 +50,7 @@
             $("#commentTable").DataTable();
         });
     </script>
+    <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
     </div>
     <?php
     mysqli_close($conn);
