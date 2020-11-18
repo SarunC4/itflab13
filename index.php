@@ -7,17 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> <!-- Datatable -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- Edit Icon -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      .btn {
-        background-color: DodgerBlue; /* Blue background */
-        border: none; /* Remove borders */
-        color: white; /* White text */
-        padding: 12px 16px; /* Some padding */
-        font-size: 16px; /* Set a font size */
-        cursor: pointer; /* Mouse pointer on hover */
+      .btnr {
+        background-color: Red;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
       }
       /* Darker background on mouse-over */
       .btn:hover {
@@ -52,7 +53,7 @@
         <tr>
           <td><?php echo $Result['Name'];?></td>
           <td><?php echo $Result['Comment'];?></td>
-          <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn"><i class="fa fa-trash"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn"><i class="far fa-edit"></i></a></div></td>
+          <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btnr"><i class="fa fa-trash"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
         </tr>
       <?php
       }
