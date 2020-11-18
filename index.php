@@ -50,7 +50,7 @@
             $("#commentTable").DataTable();
         });
     </script>
-    <div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
+    <div class="text-center"><a href="form.html" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
     </div>
     <?php
     mysqli_close($conn);
