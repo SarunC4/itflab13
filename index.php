@@ -28,9 +28,10 @@
     <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
+          <th width="100"> <div align="center">#</div></th>
           <th width="100"> <div align="center">Name</div></th>
-          <th width="350"> <div align="center">Comment </div></th>
-          <th width="150"> <div align="center">Action </div></th>
+          <th width="300"> <div align="center">Comment </div></th>
+          <th width="100"> <div align="center">Action </div></th>
         </tr>
       </thead>
       <?php
@@ -38,8 +39,9 @@
       {
       ?>
         <tr>
-          <td><?php echo $Result['Name'];?></td>
-          <td><?php echo $Result['Comment'];?></td>
+          <td><div class="text-center"><?php echo $Result['ID'];?></td></div>
+          <td><div class="text-center"><?php echo $Result['Name'];?></td></div>
+          <td><div class="text-center"><?php echo $Result['Comment'];?></td></div>
           <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
         </tr>
       <?php
