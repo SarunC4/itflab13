@@ -24,7 +24,7 @@
     ?>
     <div class="container">
     <div class="display-3 text-center mt-3">Comments Table</div>
-    <div class="text-left mt-3"><a href="form.html" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
+    <div class="text-left mb-2"><a href="form.html" class="btn btn-success"><i class="fa fa-plus"></i></a></div>
     <table id="commentTable" class="display table table-stripped table-bordered table-hover mt-5" style="width: 100%;">
       <thead class="thead-dark">
         <tr>
