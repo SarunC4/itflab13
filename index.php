@@ -22,7 +22,7 @@
       }
       /* Darker background on mouse-over */
       .btn:hover {
-        background-color: RoyalBlue;
+        background-color: Grey;
       }
     </style>
   </head>
@@ -53,7 +53,7 @@
         <tr>
           <td><?php echo $Result['Name'];?></td>
           <td><?php echo $Result['Comment'];?></td>
-          <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btnr"><i class="fa fa-trash"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
+          <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
         </tr>
       <?php
       }
