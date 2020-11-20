@@ -42,7 +42,7 @@
           <td><div class="text-center"><?php echo $Result['ID'];?></td></div>
           <td><div class="text-center"><?php echo $Result['Name'];?></td></div>
           <td><div class="text-center"><?php echo $Result['Comment'];?></td></div>
-          <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
+          <td><div class="text-center"><a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a></i></a></div></td>
         </tr>
       <?php
       }
